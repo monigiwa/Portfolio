@@ -1,0 +1,434 @@
+body{
+    margin: 0 auto;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* background-color: black; */
+    /* background-attachment: fixed; */
+}
+.container{
+    width: 90%;
+    margin: 0 auto;
+}
+.banner{
+    background-image: url(./Images/creative-clay-textured-background-blue-border-diy-tie-dye-art-abstract-style_53876-134220.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 100vh;
+}
+.harmburger{
+    position: relative;
+    display: block;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+
+    appearance: none;
+    background: none;
+    outline: none;
+    border: none;
+}
+.harmburger .bar, .harmburger:after, .harmburger:before{
+    content: "";
+    display: block;
+    width: 100%;
+    height: 5px;
+    background-color: grey;
+    margin: 6px 0px;
+    transition: 0.4s;
+}
+/* .menu li{
+    font-size: 16px;
+    padding: 15px 5px;
+}
+.menu li a {
+    display: block;
+}
+.menu{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}  */
+/* .toggle{
+    order: 1;
+}
+.item.button{
+    order: 2;
+}
+.item{
+    width: 100%;
+    text-align: center;
+    order:3;
+    display: none;
+}
+.item:active{
+    display: block;
+}
+
+ 
+.toggle{
+    cursor: pointer;
+}
+.bars{
+    background: rgb(221, 221, 146);
+    display: inline-block;
+    height: 2px;
+    position: relative;
+    width: 25px;
+    right: 0
+}
+.bars::before,.bars::after{
+    background: rgb(221, 221, 146);
+    content: "";
+    display: inline-block;
+    height: 2px;
+    position: absolute;
+    width: 18px;
+}
+.bars::before{
+    top: 5px;
+}
+.bars::after{
+    top: -5px;
+} */
+.harmburger.is-active:before {
+    transform: rotate(-45deg) translate(-8px, 6px);  
+}
+.harmburger.is-active:after {
+    transform: rotate(45deg) translate(-9px, -8px);
+}
+.harmburger.is-active .bar {
+    opacity: 0;
+}
+.header__section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%; 
+    margin: 10px;
+}
+ul{
+    display: flex;
+    list-style: none;
+    margin: 10px;
+    text-transform: uppercase;
+}
+.abouts{
+    text-decoration: none;
+    color: rgb(15, 15, 114);
+}
+.logo{
+    color: white;
+}
+.logo:hover{
+    cursor: pointer;
+    text-shadow: 3px 3px 3px #fff;
+}
+span{
+    text-decoration: underline;
+}
+li{
+    color: rgb(15, 15, 114);
+    margin-right: 10px; 
+}
+li:hover{
+    text-decoration: underline;
+    cursor: pointer;
+    text-shadow: 3px 3px 3px rgb(67, 67, 242);
+}
+.home__page{
+    width: 90%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    /* margin-top: 30px; */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.home__page> img{
+    /* margin-top: 70px; */
+}
+.Personal__portofolio{
+    width: 200px;
+    height: 300px;
+    border-style: groove;
+    border-color: rgb(221, 221, 146);
+    border-radius: 30px;
+}
+.left__page{
+    width: 70%;
+    /* margin-left: 40px; */
+    /* margin: 80px;
+    padding-left: 10px; */
+}
+.right__page{
+    /* margin-left: 100px; */
+    width: 30%;
+}
+
+h3{
+    color: rgb(80, 92, 103);
+    font-size: 1.5rem;
+}
+.name{
+    color: rgb(221, 221, 146);
+}
+p{
+    color: rgb(126, 146, 165);
+    line-height: 1.5;
+}
+.my__name{
+    color: #fff;
+}
+.btn{
+    padding: 5px 15px 5px 15px;
+    background: transparent;
+    border-color: rgb(221, 221, 146);
+    color: rgb(221, 221, 146);
+}
+.btn:hover{
+    cursor: pointer;
+    background: rgb(21, 21, 21);
+}
+/* About Section: I'll be adding three pictures */
+/* .about__section{
+    width: 90%;
+    float: center;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.about{
+    color: rgb(54, 54, 124);
+}
+.make{
+    text-decoration: none;
+}
+.sth__special{
+    color: rgb(149, 149, 66);
+    font-size: 12px;
+}
+.skills__section{
+    display: flex;
+    flex-direction: row;
+}
+.skills{
+    margin-right: 25px;
+    color: blueviolet;
+}
+.fa-js, .fa-react, .fa-css3, .fa-html5, .fa-wordpress{
+    color: blueviolet;
+    font-size: 18px;
+}
+.face{
+    float: left;
+    width: 250px;
+    height: 350px;
+    margin-top: 0;
+    margin-top: 7px;
+    border-style: inset;
+    border-radius: 25px; 
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+.about__section>p{
+    margin-bottom: 20px;
+} */
+/* .service__section{
+    width: 90%;
+    margin-top: 55px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.service{
+    color: rgb(54, 54, 124);
+}
+.service__contents{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 10px;
+}
+h4{
+    color: rgb(54, 54, 124);
+} */
+/* img{
+    width: 300px;
+} */
+
+
+
+
+
+@media (max-width: 480px){
+    .wp-block-image .size-large {
+        height: 450px;
+        background-position: center;
+        background-repeat: no-repeat;
+        margin-right: -20px;
+        margin-left: -20px;
+        position: relative;
+        text-align: center;
+    }
+    
+}
+
+@media only screen and (max-width: 480px){
+    /* .header__section{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    } */
+    .banner{
+        /* max-width: 480px;
+        background-attachment: fixed;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap; */
+    }
+    body{
+        width: 100%;
+    }
+    .home__page{
+        width: 100%;
+        display: flex;
+        flex-direction: column-reverse;
+       /* flex-wrap: wrap; */
+    }
+    /* .home__page>.right__page{
+        width: 100%;
+    } */
+    /* .about__section>.skills__section{
+        width: 90%
+    } */
+    ul{
+
+    }
+    
+}
+
+/* @media only screen and (max-width: 1120px){
+   .service__section{
+    width: 90%;
+    margin: 0 auto;
+   }
+   .service__contents{
+    display: flex;
+    flex-direction: column;
+   }
+} */
+
+
+/* @media only screen and (max-width: 540px){ */
+    /* .contact_section{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-between; */
+        /* flex-wrap: wrap; */
+    /* }
+     .contact_content{
+        width: 95%;
+    } */
+    /* .contact_input{
+        width: 95%;
+    } */
+    /* #name, #email{
+        width: 400px;
+        margin-left: 2px;
+    }
+    textarea{
+        width: 400px;
+    }
+ */
+/* } */
+
+
+
+
+
+/*.contact_section{
+    width: 90%;
+    margin: 0 auto;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+label, input{
+    width: 250px; */
+    /* margin-top: 20px; */
+    /* margin-bottom: 10px;
+}
+textarea{
+    width: 600px;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 2px; */
+    /* border-color: rgb(213, 213, 162);
+    border-style: groove; */
+    /* border: none;
+    background: rgb(163, 158, 158);
+}
+.contact_section{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+} 
+.contact_input{
+    margin-top: 25px;
+}
+#name, #email{
+    padding: 15px;
+    width: 600px;
+    border-radius: 2px;
+    /* border-color: rgb(213, 213, 157);
+    border-style: groove; */
+    /* background: rgb(163, 158, 158);
+    border: none;
+}
+#name{
+    margin-bottom: 20px;
+}
+button{
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    background: transparent;
+    cursor: pointer;
+    border-color: rgb(221, 221, 146);
+    color: rgb(221, 221, 146);
+}
+.contact_header{
+    color: rgb(221, 221, 146);
+}
+i{
+    color: rgb(221, 221, 146);
+    margin-right: 5px;
+} */ 
+/* .contact_content{
+    margin-left: 50px;
+} */
+/* .contact_input{
+    margin-left: 25px;
+} */
+<div class="service__section">
+        <h1 class="service"><span>Serv</span>ices</h1>
+        <h4>What I can do!</h4>
+        <div class="service__contents">
+            <div class="service__content1">
+                <!-- <i class="fa fa-code"></i> -->
+                <img src="./Images/insert-image-html.jpg" alt="" class="insert_image">
+                <h4>Software Development</h4>
+                <p class="content__1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, recusandae provident similique tempora aspernatur eveniet corrupti quaerat nemo et quos eaque! Recusandae debitis ullam necessitatibus aperiam totam reprehenderit laborum libero.</p>
+            </div>
+            <div class="service__content2">
+                <img src="./Images/istockphoto-1415194604-170667a.jpg" alt="" class="insert_image">
+                <h4>Front-End Development</h4>
+                <p class="content__1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, recusandae provident similique tempora aspernatur eveniet corrupti quaerat nemo et quos eaque! Recusandae debitis ullam necessitatibus aperiam totam reprehenderit laborum libero.</p>
+            </div>
+            <div class="service__content3">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT4yX9yYwZvUWzkF89kHh5j1QotQ9J6nDYw9_4biE1B3nAxsJc7pDbzoaQy_nmPe6HRnio&usqp=CAU" alt="" class="pic insert_image">
+                <h4>Web Design</h4>
+                <p class="content__1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga quo fugit laudantium. Officia placeat quas ut quia fugiat, corporis officiis, laborum sunt porro, repellendus est quo quasi ex eius facere.</p>
+            </div>
+        </div>
+    </div>
+
