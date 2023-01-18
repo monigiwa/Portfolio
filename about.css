@@ -103,10 +103,11 @@ header{
 .about__container{
     display: flex;
 }
-p{
+.p{
     color: rgb(111, 108, 108);
     line-height: 1.7;
     margin-top: 0;
+    width: fit-content;
 }
 .two, .one{
     text-decoration: underline;
@@ -129,7 +130,7 @@ p{
     margin-right: 25px;
     color: blueviolet;
 }
-.fa-js, .fa-react, .fa-css3, .fa-html5, .fa-wordpress{
+.fa-js, .fa-react, .fa-css3, .fa-html5, .fa-wordpress, #fa-github{
     color: blueviolet;
     font-size: 18px;
 }
@@ -146,7 +147,7 @@ p{
 .about__section>p{
     margin-bottom: 10px;
 }
-
+/* service section */
 .service__section{
     width: 90%;
     margin: 0 auto;
@@ -168,104 +169,204 @@ p{
     line-height: 2;
     padding: 0 35px 0 0;
 }
-h4{
-    color: rgb(54, 54, 124);
-}
-.insert_image{
-    width: 300px;
-}
-/* service section */
-.service__section{
-    width: 90%;
-    margin: 0 auto;
-    margin-top: 55px;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
-.service{
-    color: rgb(54, 54, 124);
-}
-.service__contents{
-    display: flex;
-    justify-content: space-between;
-    /* margin-right: 10px; */
-}
-.content__1{
-    line-height: 2;
-    /* padding: 0 25px 0 0; */
-}
 .service__content1, .service__content2{
     margin-right: 10px;
 }
 h4{
     color: rgb(54, 54, 124);
 }
-.insert_image{
+.pic{
     width: 250px;
     border-style: outset;
 }
-.service__content3>.insert_image{
+.service__content3>.pic{
     height: 160px;
 }
-.service__content2>.insert_image{
+.service__content2>.pic{
     height: 160px;
 }
-.service__content1>.insert_image{
+.service__content1>.pic{
     height: 160px;
 }
-/* Contact Section */
-.contact_container input[type="text"], input[type="email"], select, textarea {
-    width: 100%;
-    padding: 12px;
-    border: 1px solid #ccc;
-    background: rgb(163, 158, 158);
-    border-radius: 4px;
-    box-sizing: border-box;
-    margin-top: 6px;
-    margin-bottom: 16px;
-    resize: vertical;
-    outline: none;
+/* portfolio section */
+.insert_image{
+    width: 350px;
+    height: 350px;
+    border-style: groove;
+    border-radius: 10px;
 }
-label{
+.portfolio{
     color: rgb(54, 54, 124);
 }
-.contact_container input[type="submit"] {
-    background: transparent;
-    color: rgb(221, 221, 146);
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    border-style: groove;
-    border-color: rgb(221, 221, 146);
-    cursor: pointer;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-weight: 100;
+.portfolio__content1{
+    position: relative;
+    overflow: hidden;
+    color: white;
 }
-
-.contact_container input[type="submit"]:hover {
-    background-color: rgb(221, 221, 146);
-    color: black;
-}
-input:valid{
-    border: 1px solid green;
-}
-input:invalid{
-    border: 1px solid red;
-}
-.contact_container {
-    border-radius: 5px;
+.portfolio__section{
     width: 90%;
     margin: 0 auto;
-    margin-top: 35px;
-    /* padding: 20px; */
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.in_touch{
-    color: rgb(54, 54, 124);
+.portfolio__contents{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 40px;
+    margin-top: 50px;
+    justify-content: center;
+    align-items: center;
+}
+.portfolio__content1 img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.5s;
+}
+.layer{
+    width: 100%;
+    height: 0;
+    background: linear-gradient(rgba(0,0,0,0.6), rgb(205, 205, 149));
+    border-radius: 10px;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    transition: height 0.5s;
+}
+.layer h4{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+.layer a {
+    margin-top: 20px;
+    color: rgb(224, 224, 144);
+    text-decoration: none;
+    font-size: 18px;
+    line-height: 60px;
+    background: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+}
+.portfolio__content1:hover img{
+    transform: scale(1.1);
+}
+.portfolio__content1:hover .layer{
+    height: 100%;
+}
+.port_header{
+    color: #fff;
 }
 span{
     text-decoration: underline;
 }
-
+.btn_port{
+    display: block;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid rgb(205, 205, 149);
+    padding: 14px 30px;
+    border-radius: 6px;
+    text-decoration: none;
+    color: rgb(205, 205, 149);
+    transition: background 0.5s;
+    margin-bottom: 10px;
+}
+.btn_port:hover{
+ background: #000;
+}
+/* Contact Section */
+.contact_container{
+    width: 90%;
+    /* margin: 0 auto; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.contact_section{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.contact_content{
+    margin-right: 25px;
+}
+#name, #email{
+    height: 25px;
+    width: 500px;
+    border-radius: 7px;
+    background: rgb(188, 185, 185);
+    border: none;
+    outline: none;
+}
+#name{
+    margin-bottom: 20px;
+}
+.button{
+    margin-top: 20px;
+    padding: 5px 15px 5px 15px;
+    background: transparent;
+    cursor: pointer;
+    border-color: rgb(221, 221, 146);
+    color: rgb(221, 221, 146);
+    margin-bottom: 20px;
+}
+.btn2{
+    text-decoration: none;
+}
+.contact_header{
+    color: rgb(221, 221, 146);
+}
+p>i{
+    color: rgb(221, 221, 146);
+    margin-right: 5px;
+}
+.social_icons{
+    color: rgb(221, 221, 146);
+    margin-right: 5px;
+    margin-top: 30px;
+}
+.social_icons a{
+    color: rgb(221, 221, 146);
+    font-size: 30px;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social_icons a:hover{
+    color: rgb(221, 221, 146);
+    transform: translateY(-5px);
+}
+textarea{
+    width: 600px;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding-bottom: 50px;
+    border-radius: 7px;
+    border: none;
+    background: rgb(194, 191, 191);
+    outline: none;
+}
+/* footer */
+footer{
+    color: rgb(221, 221, 146);;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 15px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
 /* body responsiveness */
 @media only screen and (max-width: 540px){
     body{
@@ -463,14 +564,14 @@ span{
     }
     .about__section{
         width: 95%; 
-        font-size: 15px;
+        font-size: 16px;
         line-height: 1;
         box-shadow: 0px 4px 10px rgba(195, 202, 119, 0.4);
     
     }
     .face{
-        width: 250px;
-        height: 250px;
+        width: 220px;
+        height: 220px;
     }
     }
 
@@ -531,6 +632,7 @@ span{
         flex-wrap: wrap;
         width: 95%;
         margin-left: 2px;
+        font-size: 15px;
     }
     .service__section{
         margin-top: 30px;
@@ -576,33 +678,157 @@ span{
         margin-top: 30px;
     }
 }
+/* portfolio responsiveness */
+@media only screen and (max-width: 540px) {
+    .portfolio__section{
+        width: 95%;
+        box-shadow: 0px 4px 10px rgba(195, 202, 119, 0.4);
+    }
+}
+@media only screen and (min-width: 541px) and (max-width: 768px) {
+    .portfolio__section{
+        width: 95%;
+        box-shadow: 0px 4px 10px rgba(195, 202, 119, 0.4);
+    }
+}
+@media only screen and (min-width: 769px) and (max-width: 960px){
+    .portfolio__section{
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 961px){
+    .portfolio__section{
+        width: 95%;
+    }
+}
 /* Contact responsiveness */
 @media only screen and (max-width: 540px){
+    .contact_section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
     .contact_container{
+        box-sizing: border-box;
+        display: flex;
         width: 95%;
         margin: 0 auto;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 10px rgba(195, 202, 119, 0.4);
     }
-    form{
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    .contact_content{
+        /* margin-left: 0; */
+        width: 95%;
+        margin-bottom: 20px;
+        font-size: 13px;
+        margin: 0 auto; 
+    }
+    .contact_input{
+        width: 95%;
+        box-sizing: border-box;
+        margin: 0 auto;
+    }
+     input, textarea{
+        width: 100%;
+    }
+    #name, #email{
+        width: 100%;
     }
 }
 @media only screen and (min-width: 541px) and (max-width: 768px){
+    .contact_section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
     .contact_container{
+        box-sizing: border-box;
+        display: flex;
         width: 95%;
         margin: 0 auto;
-        box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-}
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-shadow: 0px 4px 10px rgba(195, 202, 119, 0.4);
+    }
+    .contact_content{
+        margin-left: 0;
+        width: 95%;
+        margin-bottom: 20px;
+        font-size: 13px;
+        margin: 0 auto;
+    }
+    .contact_input{
+        width: 95%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+     input, textarea{
+        width: 100%;
+    }
+    #name, #email{
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 769px) and (max-width: 960px){
+    .contact_section{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        flex-wrap: wrap;
+    }
     .contact_container{
+        box-sizing: border-box;
+        display: flex;
         width: 95%;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .contact_content{
+        margin-left: 0;
+        width: 95%;
+        margin-bottom: 20px;
+        font-size: 13px;
         margin: 0 auto;
-}
+    }
+    .contact_input{
+        width: 95%;
+        margin-left: 0;
+        box-sizing: border-box;
+    }
+    input, textarea{
+        width: 100%;
+    }
+    #name, #email{
+        width: 100%;
+    }
 }
 @media only screen and (min-width: 961px){
-    .contact_container{
+    .contact_section{
         width: 95%;
-        margin: 0 auto;
-}
+        display: flex;
+        justify-content: space-between;
+        margin: auto;
+    }
+     .contact_container{
+        display: flex;
+        box-sizing: border-box;
+        margin-top: 35px;
+        width: 95%;
+    }
+    .contact_input{
+        margin-top: 10px;
+    }
+    #name, #email{
+        width: 600px;
+        height: 35px;
+    }
 }
