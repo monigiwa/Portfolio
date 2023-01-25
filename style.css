@@ -58,7 +58,7 @@ header{
     width: 90%;
     display: flex;
     justify-content: space-around;
-    margin-top: 50px; 
+    margin-buttom: 50px; 
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .personal__portofolio{
@@ -155,7 +155,7 @@ header{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .service{
-    color: rgb(54, 54, 124);
+    color: rgb(205, 205, 148);
 }
 .service__contents{
     display: flex;
