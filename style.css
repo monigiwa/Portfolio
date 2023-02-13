@@ -129,6 +129,7 @@ header{
 } */
 .skills{
     margin-right: 25px;
+    color: rgb(221, 221, 146);
 }
 .fa-js, .fa-react, .fa-css3, .fa-html5, .fa-wordpress, #fa-github{
     color: rgb(221, 221, 146);
