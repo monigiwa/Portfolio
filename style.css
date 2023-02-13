@@ -113,7 +113,7 @@ header{
     text-decoration: underline;
 }
 .about{
-    color: rgb(54, 54, 124);
+    color: rgb(221, 221, 146);
 }
 .make{
     text-decoration: none;
@@ -128,10 +128,9 @@ header{
 } */
 .skills{
     margin-right: 25px;
-    color: blueviolet;
 }
 .fa-js, .fa-react, .fa-css3, .fa-html5, .fa-wordpress, #fa-github{
-    color: blueviolet;
+    color: rgb(221, 221, 146);
     font-size: 18px;
 }
 .face{
@@ -155,7 +154,7 @@ header{
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 .service{
-    color: rgb(54, 54, 124);
+    color: rgb(221, 221, 146);
 }
 .service__contents{
     display: flex;
@@ -196,7 +195,7 @@ h4{
     border-radius: 10px;
 }
 .portfolio{
-    color: rgb(54, 54, 124);
+    color: rgb(221, 221, 146);
 }
 .portfolio__content1{
     position: relative;
